@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04-arm
 
     steps:
     - uses: actions/checkout@v4
@@ -23,7 +23,7 @@ jobs:
       uses: actions/upload-artifact@v4.6.2
       with:
         name: artifact
-        path: ./
+        path: ./src/ntripcaster
     
   
     
